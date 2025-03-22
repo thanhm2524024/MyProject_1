@@ -10,9 +10,10 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="text-center">Danh sách sinh viên</h2>
-        <table class="table table-bordered table-striped">
-            <thead class="table-dark">
+        <h2 class="text-center text-primary">Danh sách sinh viên</h2>
+        <table class="table table-bordered border-3 table-striped text-center">
+            <!-- Đổi màu header thành xanh biển -->
+            <thead class="table-primary border-2 border-dark">
                 <tr>
                     <th>MSHV</th>
                     <th>Họ tên</th>
@@ -39,7 +40,7 @@
             // Thêm dữ liệu vào bảng
             $.each(students, function(index, student) {
                 $("#studentTable").append(
-                    `<tr>
+                    `<tr class="border-1 text-center border-dark">
                         <td>${student.MSHV}</td>
                         <td>${student.hoten}</td>
                         <td>${student.ngaysinh}</td>
